@@ -1,25 +1,73 @@
 aid: oxipital-ai
+
 name: Oxipital AI
-description: 'Oxipital AI is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by scale-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Oxipital AI provides AI-powered computer vision solutions that enable developers to integrate advanced image and video analysis into their applications. Their platform offers APIs for object detection, scene understanding, and visual search, targeting industries such as retail, security, and autonomous systems. Founded in 2022, Oxipital AI leverages deep learning models to deliver scalable, real-time visual insights, with a focus on privacy and on-device processing where possible. The company is backed by Scale Venture Partners and aims to democratize access to cutting‑edge visual AI technology for developers worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/oxipital-ai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- AI
+- Computer Vision
+- APIs
+- Developer Tools
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- scale-venture-partners
+
 common:
+- type: LLMsTxt
+  url: llms/oxipital-ai-llms.txt
+- type: WellKnown
+  url: well-known/oxipital-ai-well-known.yml
+- type: Hosts
+  url: hosts/oxipital-ai-hosts.yml
+- type: Vendors
+  url: vendors/oxipital-ai-vendors.yml
+- type: Sandbox
+  url: https://www.oxipitalai.com/sandbox/
+- type: PrivacyPolicy
+  url: https://www.oxipitalai.com/privacy-policy/
+- type: Leadership
+  url: https://www.oxipitalai.com/leadership/
+- type: DomainSecurity
+  url: security/oxipital-ai-domain-security.yml
 - type: Website
   url: https://www.oxipitalai.com/
+
+apis: []
+
+x-backed-by:
+- scale-venture-partners
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer documentation or API specifications were found on the provider's website.
+  evidence:
+    - url: https://www.oxipitalai.com/
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
